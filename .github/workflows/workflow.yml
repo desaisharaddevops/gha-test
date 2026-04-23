@@ -13,6 +13,6 @@ jobs:
       run: echo "Running Tests"
   deploy:
     runs-on: ubuntu-latest
-    stpes:
-    - name: Deploy App
-      run: echo "Deploy Step"
+    steps:
+      - name: Deploy App
+        run: echo "Deploy Step"
