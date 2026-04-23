@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build Step
-        run: echo "A Demo Build for ${{ vars.MY_NAME }}"
+        run: echo "A Demo Build for ${{ secrets.DOCKER_PASSWORD }}"
   test:
     runs-on: ubuntu-latest
     needs: build
