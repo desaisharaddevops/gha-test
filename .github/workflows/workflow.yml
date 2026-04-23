@@ -1,5 +1,14 @@
 name: Hello world
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    type:
+      - opened
+    branches:
+    - main
 jobs:
   build:
     runs-on: ubuntu-latest
