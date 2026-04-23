@@ -1,0 +1,11 @@
+name: Context Demo
+on: push
+jobs:
+  context-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use Context
+        run: |
+          echo "Triggered by: ${{ github.actor}}"
+          echo "Repository: ${{ github.repository}}
+          
