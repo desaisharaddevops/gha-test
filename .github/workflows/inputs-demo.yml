@@ -6,9 +6,16 @@ on:
         description: Choose ENV to deploy
         required: true
         default: dev
+        options:
+         - dev
+         - test
+         - prod
+      tag:
+        description: Choose tag to deploy
+        required: true
 jobs:
     inputs-demo:
       runs-on: ubuntu-latest
       steps:
         - name: Deploy App
-          run: echo "Deploying to ${{ inputs.environment }}"
+          run: echo "Deploying ${{ inputs.tag }} to ${{ inputs.environment }}"
