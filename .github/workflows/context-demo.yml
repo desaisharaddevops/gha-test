@@ -7,5 +7,5 @@ jobs:
       - name: Use Context
         run: |
           echo "Triggered by: ${{ github.actor}}"
-          echo "Repository: ${{ github.repository}}
+          echo "Repository: ${{ github.repository}}"
           
